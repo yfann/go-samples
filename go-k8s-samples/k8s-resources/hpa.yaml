@@ -1,0 +1,22 @@
+apiVersion: autoscaling/v2beta2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: hpa-test
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: nginx-deployment
+  minReplicas: 1
+  maxReplicas: 4
+  metrics:
+  - type: Object
+    object:
+      metric:
+        name: container_cpu_cfs_periods_total
+      describedObject:
+        kind: Pod
+        name: prometheus-data-generator-586cf4bccf-kjph2
+      target:
+        type: Value
+        value: 200

@@ -1,0 +1,16 @@
+prometheus :
+    url: http://prometheus-server.monitor.svc.cluster.local
+    port: 80
+rules:
+    default: false
+    custom:
+      - seriesQuery: 'container_cpu_cfs_periods_total'
+        resources:
+          overrides:
+            namespace: {resource: "namespace"}
+            pod: {resource: "pod"}
+        name:
+          matches: "container_cpu_cfs_periods_total"
+          as: "container_cpu_cfs_periods_total"
+        metricsQuery: 'container_cpu_cfs_periods_total'
+  
