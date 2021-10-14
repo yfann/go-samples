@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"go-sample/vault"
-	"strconv"
 	"strings"
 )
 
@@ -40,7 +39,33 @@ func main() {
 	//fmt.Println(fmt.Sprintf("%v", x))
 	//sample.ReadFile()
 	//fmt.Println(len("ry.cn-shanghai.aliyuncs.com/hsc/hsc-vault-operator-bundle:1.1.2"))
-	vault.AddTransitKey("test")
+	//vault.AddTransitKey("test")
+	//sample.TestMongo()
+	//sample.GetAliLogs()
+	//testIf()
+	//sample.TestStr()
+	//sample.TestConvert()
+	//sample.GetEnv()
+	test()
+}
+
+func test(){
+
+	fmt.Printf("%v",map[string]string{"aa":"bb"})
+}
+
+func testIf(){
+	if i,j:=get();i>0{
+		fmt.Println(i)
+	}else if j>0{
+		fmt.Println(j)
+	}else{
+		fmt.Println("end")
+	}
+}
+
+func get()(int,int){
+	return 0,0
 }
 
 func testVault() {
@@ -64,21 +89,23 @@ func delVault() {
 
 func testStr() {
 	//fmt.Println(strings.Replace("$sdfg sdf as $sdfg","$sdfg","@@@@",-1))
-	a := "namespace:<$project>"
-	fmt.Println(strings.Replace(a, "<$project>", "123", 1))
-	fmt.Println(a)
+	//a := "namespace:<$project>"
+	//fmt.Println(strings.Replace(a, "<$project>", "123", 1))
+	//fmt.Println(a)
+	//
+	//b := "asdfasdf| 12332"
+	//fmt.Println(strings.Split(b, "|"))
+	//
+	//fmt.Println(strings.HasPrefix("my string", "my  s"))
+	//fmt.Println(strings.HasPrefix("my string", "xxx"))
+	//
+	//fmt.Println(strconv.Quote("Hello, 世界"))
+	//fmt.Println("\"Hello, \"世界\"")
+	//fmt.Println(strconv.Unquote("\"Hello, \"世界\""))
+	//fmt.Println(strconv.Quote("Hello, 世界"))
+	//fmt.Println(strconv.QuoteToASCII("Hello, 世界"))
 
-	b := "asdfasdf| 12332"
-	fmt.Println(strings.Split(b, "|"))
-
-	fmt.Println(strings.HasPrefix("my string", "my  s"))
-	fmt.Println(strings.HasPrefix("my string", "xxx"))
-
-	fmt.Println(strconv.Quote("Hello, 世界"))
-	fmt.Println("\"Hello, \"世界\"")
-	fmt.Println(strconv.Unquote("\"Hello, \"世界\""))
-	fmt.Println(strconv.Quote("Hello, 世界"))
-	fmt.Println(strconv.QuoteToASCII("Hello, 世界"))
+	fmt.Println(strings.Split("2651e1ee-e69b-476d-9c32-557265511096","-")[0])
 }
 
 func testMap() {

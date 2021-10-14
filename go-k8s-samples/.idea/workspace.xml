@@ -20,17 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60acde47-5db0-481d-8015-94bef7e2eaf3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sample/.idea/go-sample.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sample/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sample/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sample/file.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sample/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sample/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sample/sample/file.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sample/sample/obj.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sample/sample/regexp.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go-sample/sample/time.go" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../go-sample/sample/convert.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../go-sample/sample/logStore.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../go-sample/sample/mongo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go-sample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../go-sample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go-sample/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../go-sample/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go-sample/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../go-sample/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go-sample/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../go-sample/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go-sample/sample/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/../go-sample/sample/file.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go-sample/sample/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/../go-sample/sample/log.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go-sample/sample/str.go" beforeDir="false" afterPath="$PROJECT_DIR$/../go-sample/sample/str.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go-sample/sample/time.go" beforeDir="false" afterPath="$PROJECT_DIR$/../go-sample/sample/time.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +46,13 @@
   </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1kESn4mKB0NDm5pzBX7GXJ2Rssd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -63,7 +64,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../go-sample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -100,7 +101,10 @@
     <state x="2660" y="295" key="FileChooserDialogImpl" timestamp="1626232110134">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1180" y="295" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1623204272544" />
     <state x="2660" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1626232110134" />
+    <state x="667" y="273" width="585" height="534" key="find.popup" timestamp="1634095159431">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="667" y="273" width="585" height="534" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1634095159431" />
   </component>
 </project>

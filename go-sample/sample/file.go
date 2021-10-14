@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"encoding/json"
 )
 
 func CreateFolder(){
@@ -26,4 +27,16 @@ func CreateFile(){
 func ReadFile(){
 	dat, _ := ioutil.ReadFile("C:\\tmp\\aa.txt")
 	fmt.Print(string(dat))
+}
+
+
+func GetEnv() (map[string]string, error) {
+	dat, _ := ioutil.ReadFile("C:\\tmp\\aa.txt")
+
+	m := make(map[string]string)
+	if err := json.Unmarshal(dat, &m); err != nil {
+		return nil, err
+	}
+
+	return nil, nil
 }
